@@ -1,0 +1,12 @@
+.container{
+    margin: 1rem auto;
+    width: 200px;
+    height:max-content;
+    background-color:#ebebeb;
+    padding: 20px 15px;
+    border-radius: 0.25rem;
+    font-family:"Poppins",sans-serif;
+}
+.form-error{
+    color: red;
+}
