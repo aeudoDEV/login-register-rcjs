@@ -23,7 +23,7 @@ app.post("/login", (req, res) => {
             res.send(err);
         }if(result == 0){
             db.query(
-                "INSERT INTO usuario (usuario, senha) VALUES (?, ?)" [email, password],
+                "INSERT INTO usuario (usuario, senha) VALUES (?, ?)",[email, password],
                 function (error, results, fields) {
                     if (error) {
                         console.log("Falha ao inserir"+error);
@@ -32,6 +32,10 @@ app.post("/login", (req, res) => {
                 );
         }
     });
+    
+    return res.json({
+        message: "Sucesso!"
+    })
 
 })
 
